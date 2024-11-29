@@ -1,0 +1,65 @@
+:root{
+    /* Couleurs */
+
+    --color-btn:#FDB212;
+    --color-text:#FFC03B;
+    --background-card:#1D170F;
+    --background-dark:#111111;
+    --width-logo:229px;
+    --height-logo:48px;
+
+}
+
+::selection{
+  background-color: var(--color-btn);
+  color: var(--background-dark);
+}
+body{
+    background:var(--background-dark);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.btn{
+    background: var(--color-btn);
+}
+/* les polices */
+
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-semi-bold {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+  .montserrat-extra-bold {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  /* classes par default */
+  .textcolor{
+    color: var(--color-text);
+  }
+  .gray{
+    filter: grayscale(100%);
+    
+  }
+  #dominique{
+transition: all ease 0.5s;
+  }
+  #dominique:hover{
+    cursor: pointer;
+  }
+
+  .split-char{
+    display: inline-block;
+  }

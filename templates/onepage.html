@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+
+<link rel="stylesheet" href="{% static 'css/onepage.css' %}">
+{% endblock%}
+{% block content %}
+{% include 'include/navbar.html' %}
+
+<div class="position-absolute top-0 start-0 vh-100 w-100 bg-black z-3 d-flex justify-content-center align-items-center text-light fw-bold fs-1" style="transform: translateY(-100%);" id="transistion">5</div>
+
+    {% include 'include/hero.html' %}
+
+{% include 'include/projects.html' %}
+
+
+
+{% include 'include/about-me.html' %}
+
+{% include 'include/service.html' %}
+{% include 'include/contactme.html' %}
+
+
+
+<script src="{% static 'js/onepage.js' %}"></script>
+
+{% endblock %}

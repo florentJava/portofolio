@@ -1,0 +1,144 @@
+.trait,
+.trait2 {
+    height: 10px;
+    width: 370px;
+}
+
+.trait {
+    background: linear-gradient(to right, transparent, var(--color-text));
+
+}
+
+.trait2 {
+    background: linear-gradient(to left, transparent, var(--color-text));
+
+}
+
+.item {
+    position: relative;
+}
+
+.item:hover {
+    background: #1D170F;
+    cursor: pointer;
+}
+
+.item:hover::before {
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 2px;
+    top: 0;
+
+    background: linear-gradient(transparent, var(--color-text), transparent);
+}
+
+.fas {
+    transition: all ease 0.5s;
+}
+
+.item:hover .fas {
+    background: white;
+    padding: 5px;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    box-shadow: 0px 0px 10px var(--color-text);
+    z-index: 100 !important;
+}
+
+.translate {
+    transform: rotate3d(1, 1, 0, 55deg);
+    transition: all 0.5s ease;
+}
+
+.translate:hover {
+    transform: rotate3d(1, 1, 0, 0);
+}
+
+.about-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.about-item::before {
+    content: "?";
+    font-size: 100px;
+    font-weight: bold;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    background: black;
+    top: -10px;
+    left: 0;
+    border-radius: 0.375rem;
+    top: 0;
+    left: 0;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    padding-top: auto;
+    cursor: pointer;
+}
+
+.about-item:hover::before {
+
+    transform: translateY(100%);
+
+
+}
+
+.myservices div {
+    background: linear-gradient(135deg, rgba(20, 16, 11, 0.7), rgba(63, 39, 0, 0.56));
+    border: 1px solid #5A3E07;
+
+}
+
+.service-titre {
+    font-weight: 600;
+}
+
+::placeholder {
+    color: #fdfeff !important;
+    font-style: italic;
+    font-size: 0.9rem;
+    opacity: 0.7 !important;
+}
+
+input:focus,
+textarea:focus {
+    outline: none !important;
+    border-color: #5A3E07 !important;
+    box-shadow: none !important;
+}
+
+@media screen and (max-width:900px) {
+    
+    .myname {
+        line-height: normal !important;
+        font-size: 40px !important;
+
+    }
+
+    .circle-dominique {
+        border-radius: 0% !important;
+        overflow-y: hidden !important;
+
+
+    }
+
+    .mybio {
+        font-size: 15px !important;
+    }
+  /* #about{
+    height: auto !important;
+  } */
+    .textcolor{
+        font-size: 15px !important;
+        text-wrap: nowrap;
+    }
+    .text{
+        font-size: 10px;
+    }
+}
