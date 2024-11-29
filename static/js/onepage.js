@@ -19,6 +19,9 @@ function initScrollAnimations() {
         // Animation du titre
         gsap.from(title, {
             scrollTrigger: {
+                mobile: {
+                    start: "top 95%", // Plus flexible sur mobile
+                },
                 trigger: title,
                 start: "top 80%",
                 toggleActions: "play none none none"
@@ -31,6 +34,9 @@ function initScrollAnimations() {
         const traits = title.querySelectorAll('.trait, .trait2');
         gsap.from(traits, {
             scrollTrigger: {
+                mobile: {
+                    start: "top 95%", // Plus flexible sur mobile
+                },
                 trigger: title,
                 start: "top 80%",
                 toggleActions: "play none none none"
@@ -44,6 +50,9 @@ function initScrollAnimations() {
     // Animations des services
     gsap.from(".myservices div:nth-child(2n+1)", {
         scrollTrigger: {
+            mobile: {
+                start: "top 95%", // Plus flexible sur mobile
+            },
             trigger: ".myservices div:nth-child(2n+1)",
         },
         x: 500,
@@ -56,6 +65,9 @@ function initScrollAnimations() {
 
     gsap.from(".myservices div:nth-child(2n)", {
         scrollTrigger: {
+            mobile: {
+                start: "top 95%", // Plus flexible sur mobile
+            },
             trigger: ".myservices div:nth-child(2n+1)",
         },
         x: -500,
@@ -70,8 +82,11 @@ function initScrollAnimations() {
     document.querySelectorAll('.item').forEach((item) => {
         gsap.from(item, {
             scrollTrigger: {
+                mobile: {
+                    start: "top 95%", // Plus flexible sur mobile
+                },
                 trigger: item,
-                
+                start: 'top bottom',
             },
             x: 1000,
             duration: 1,
@@ -84,6 +99,9 @@ function initScrollAnimations() {
     // Animation des éléments "about"
     gsap.from(".about-item", {
         scrollTrigger: {
+            mobile: {
+                start: "top 95%", // Plus flexible sur mobile
+            },
             trigger: ".about-item",
         },
         scale: 0,
@@ -127,6 +145,9 @@ function initFormAnimations() {
     // Animation de défilement plus sophistiquée
     gsap.from(formElements, {
         scrollTrigger: {
+            mobile: {
+                start: "top 95%", // Plus flexible sur mobile
+            },
             trigger: formElements,
             start: "top 80%",
             end: "bottom 20%",
