@@ -26,7 +26,7 @@
             </a>
         <!-- Responsive Toggle Button -->
          <div class="d-md-none d-block">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
             <span class="navbar-toggler-icon text-light" style="color:white"></span>
         </button>
          </div>
@@ -37,8 +37,24 @@
             <a href="#about" class="link-light link-underline link-underline-opacity-0 lien position-relative">About</a>
             <a href="#service" class="link-light link-underline link-underline-opacity-0 lien position-relative">Service</a>
 
-            <a href="#contactme" class="btn text-dark montserrat-semi-bold lien position-relative">Contact Me</a>
+            <div class="d-none d-lg-block">
+                           <a href="#contactme" class="btn text-dark montserrat-semi-bold lien position-relative">Contact Me</a>
+ 
+            </div>
         </div>
     </div>
-
+    <div class="offcanvas offcanvas-start bg-dark d-md-none d-block" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+          <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="d-flex flex-column justify-content-center">
+            <a href="#home" class="link-light link-underline link-underline-opacity-0 lien position-relative fs-1">Home</a>
+            <a href="#projects" class="link-light link-underline link-underline-opacity-0 lien position-relative fs-1">Projects</a>
+            <a href="#about" class="link-light link-underline link-underline-opacity-0 lien position-relative fs-1">About</a>
+            <a href="#service" class="link-light link-underline link-underline-opacity-0 lien position-relative fs-1">Service</a>
+          </div>
+        </div>
+      </div>
 </nav>

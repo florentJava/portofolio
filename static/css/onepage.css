@@ -113,7 +113,8 @@ textarea:focus {
     box-shadow: none !important;
 }
 
-@media screen and (max-width:900px) {
+
+@media screen and (max-width: 992px) {
     
     .myname {
         line-height: normal !important;
@@ -141,4 +142,23 @@ textarea:focus {
     .text{
         font-size: 10px;
     }
+}
+
+
+@media (min-width: 768px) { 
+    .circle-dominique {
+        border-radius: 100% !important;
+        overflow-y: hidden !important;
+
+
+    }
+}
+
+@media (min-width: 992px) {
+    .myname {
+        line-height: 12px !important;
+        font-size: 40px !important;
+
+    }
+    
 }
