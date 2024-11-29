@@ -152,13 +152,23 @@ textarea:focus {
 
 
     }
+    #home{
+        margin-top: 100px;
+    }
 }
 
 @media (min-width: 992px) {
+    body{
+        overflow-x: hidden !important;
+    }
     .myname {
         line-height: 12px !important;
         font-size: 40px !important;
+        
 
+    }
+    #home{
+        margin-top: 100px;
     }
     
 }

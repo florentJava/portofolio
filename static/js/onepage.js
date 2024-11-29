@@ -71,7 +71,7 @@ function initScrollAnimations() {
         gsap.from(item, {
             scrollTrigger: {
                 trigger: item,
-                start: 'top bottom',
+                
             },
             x: 1000,
             duration: 1,

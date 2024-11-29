@@ -7,6 +7,7 @@
     --background-dark:#111111;
     --width-logo:229px;
     --height-logo:48px;
+    overflow-x: hidden !important;
 
 }
 
