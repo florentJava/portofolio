@@ -95,12 +95,8 @@ function initScrollAnimations() {
 function initHoverAnimations() {
     // Survol de l'image de Dominique
     const imageDominique = document.querySelector("#dominique");
-    imageDominique.addEventListener("mouseenter", () => {
-        imageDominique.classList.remove("gray");
-    });
-    imageDominique.addEventListener("mouseleave", () => {
-        imageDominique.classList.add("gray");
-    });
+
+
 
     // Survol des liens
     document.querySelectorAll(".lien").forEach((link) => {

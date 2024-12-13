@@ -50,11 +50,11 @@ body{
     color: var(--color-text);
   }
   .gray{
-    filter: grayscale(100%);
+    
     
   }
   #dominique{
-transition: all ease 0.5s;
+    transition: all ease 0.5s;
   }
   #dominique:hover{
     cursor: pointer;

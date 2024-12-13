@@ -113,6 +113,19 @@ textarea:focus {
     box-shadow: none !important;
 }
 
+#inlineFrameExample {
+    height: 70vw; /* La hauteur est basée sur la largeur de la fenêtre */
+    max-height: 450px; /* Hauteur maximale pour les grands écrans */
+    min-height: 300px; /* Hauteur minimale pour les petits écrans */
+}
+
+@media (max-width: 768px) {
+    #inlineFrameExample {
+        height: 70vw; /* Plus haut pour les petits écrans */
+    }
+}
+
+
 
 @media screen and (max-width: 992px) {
     

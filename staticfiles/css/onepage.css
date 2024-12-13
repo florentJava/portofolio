@@ -142,3 +142,18 @@ textarea:focus {
         font-size: 10px;
     }
 }
+
+
+
+
+
+@media (max-width: 400px) {
+
+    .myname {
+        line-height: 12px !important;
+        font-size: 12px !important;
+        
+
+    }
+
+}
