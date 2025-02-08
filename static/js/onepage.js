@@ -281,10 +281,8 @@ function initLogoAnimations() {
         .from(circleImage, {
             duration: 2,
             opacity: 0,
-            x: 700,
-            rotateZ: "360deg",
-            ease: "bounce.out"
-        }, "-=0.5")
+            y: -700
+            }, "-=0.5")
         .to(splitChars, {
             duration: 0.1,
             color: "#FFC03B",

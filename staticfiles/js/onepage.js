@@ -93,10 +93,7 @@ function initScrollAnimations() {
 
 // Animations de survol
 function initHoverAnimations() {
-    // Survol de l'image de Dominique
-    const imageDominique = document.querySelector("#dominique");
-
-
+    
 
     // Survol des liens
     document.querySelectorAll(".lien").forEach((link) => {
@@ -256,7 +253,7 @@ function initLogoAnimations() {
         .from(circleImage, {
             duration: 2,
             opacity: 0,
-            x: 700,
+            y: 700,
             rotateZ: "360deg",
             ease: "bounce.out"
         }, "-=0.5")
