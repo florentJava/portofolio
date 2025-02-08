@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     gsap.registerPlugin(Observer)
     // Initialisation des animations
     initScrollAnimations();
-    initHoverAnimations();
+    // initHoverAnimations();
     initFormAnimations();
     initLogoAnimations();
     transition();
@@ -19,6 +19,9 @@ function initScrollAnimations() {
         // Animation du titre
         gsap.from(title, {
             scrollTrigger: {
+                mobile: {
+                    start: "top 95%", // Plus flexible sur mobile
+                },
                 trigger: title,
                 start: "top 80%",
                 toggleActions: "play none none none"
@@ -31,6 +34,9 @@ function initScrollAnimations() {
         const traits = title.querySelectorAll('.trait, .trait2');
         gsap.from(traits, {
             scrollTrigger: {
+                mobile: {
+                    start: "top 95%", // Plus flexible sur mobile
+                },
                 trigger: title,
                 start: "top 80%",
                 toggleActions: "play none none none"
@@ -44,6 +50,9 @@ function initScrollAnimations() {
     // Animations des services
     gsap.from(".myservices div:nth-child(2n+1)", {
         scrollTrigger: {
+            mobile: {
+                start: "top 95%", // Plus flexible sur mobile
+            },
             trigger: ".myservices div:nth-child(2n+1)",
         },
         x: 500,
@@ -56,6 +65,9 @@ function initScrollAnimations() {
 
     gsap.from(".myservices div:nth-child(2n)", {
         scrollTrigger: {
+            mobile: {
+                start: "top 95%", // Plus flexible sur mobile
+            },
             trigger: ".myservices div:nth-child(2n+1)",
         },
         x: -500,
@@ -70,6 +82,9 @@ function initScrollAnimations() {
     document.querySelectorAll('.item').forEach((item) => {
         gsap.from(item, {
             scrollTrigger: {
+                mobile: {
+                    start: "top 95%", // Plus flexible sur mobile
+                },
                 trigger: item,
                 start: 'top bottom',
             },
@@ -84,6 +99,9 @@ function initScrollAnimations() {
     // Animation des éléments "about"
     gsap.from(".about-item", {
         scrollTrigger: {
+            mobile: {
+                start: "top 95%", // Plus flexible sur mobile
+            },
             trigger: ".about-item",
         },
         scale: 0,
@@ -93,7 +111,14 @@ function initScrollAnimations() {
 
 // Animations de survol
 function initHoverAnimations() {
-    
+    // Survol de l'image de Dominique
+    const imageDominique = document.querySelector("#dominique");
+    // imageDominique.addEventListener("mouseenter", () => {
+    //     imageDominique.classList.remove("gray");
+    // });
+    // imageDominique.addEventListener("mouseleave", () => {
+    //     imageDominique.classList.add("gray");
+    // });
 
     // Survol des liens
     document.querySelectorAll(".lien").forEach((link) => {
@@ -120,6 +145,9 @@ function initFormAnimations() {
     // Animation de défilement plus sophistiquée
     gsap.from(formElements, {
         scrollTrigger: {
+            mobile: {
+                start: "top 95%", // Plus flexible sur mobile
+            },
             trigger: formElements,
             start: "top 80%",
             end: "bottom 20%",
@@ -253,10 +281,8 @@ function initLogoAnimations() {
         .from(circleImage, {
             duration: 2,
             opacity: 0,
-            y: 700,
-            rotateZ: "360deg",
-            ease: "bounce.out"
-        }, "-=0.5")
+            y: -700
+            }, "-=0.5")
         .to(splitChars, {
             duration: 0.1,
             color: "#FFC03B",
